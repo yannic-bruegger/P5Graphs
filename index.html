@@ -6,6 +6,6 @@
     <script src="visualizer.js"></script>
   </head>
   <body style="padding: 0; margin: 0;">
-    <input type="file" accept=".txt" onchange="readTextFile(this.value+'')">
+    <input type="file" accept=".txt" onchange="readTextFile('graphs/' + this.value.split('\\')[2])">
   </body>
 </html>

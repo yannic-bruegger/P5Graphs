@@ -6,7 +6,7 @@ function setup()
 {
     createCanvas(windowWidth, windowHeight);
     readTextFile( 'graphs/graph_1024.txt' );
-    
+    vertices[1].activate();
 }
   
 function draw()
@@ -85,7 +85,6 @@ function importGraph( fileContent )
 
 
     fileVertices.forEach( vertex => {
-        console.log( vertex.split( " " ) );
         vertices.push( new Vertex(  vertex.split( ' ' )[0], { x: vertex.split( ' ' )[1], y: vertex.split( ' ' )[2] } ) );
     });
     let fileEdges       = sections[2].split('\n');
