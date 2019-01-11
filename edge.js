@@ -11,7 +11,7 @@ function Edge( connectedNodeA, connectedNodeB, weight = 1 )
     this.toggleActivation   = function() { this.active = !this.active };
     this.show = function(){
         strokeWeight( sizeReference/13 );
-        stroke( 0 )
+        stroke( 255 )
         if( this.active ) stroke( 30, 180, 25 );
         line( connectedNodeA.position.x, connectedNodeA.position.y, connectedNodeB.position.x, connectedNodeB.position.y );
     }

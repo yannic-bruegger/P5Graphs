@@ -1,4 +1,4 @@
-var sizeReference = 20;
+var sizeReference = 10;
 
 function Vertex( value, position = { x: 0, y: 0 } )
 {
